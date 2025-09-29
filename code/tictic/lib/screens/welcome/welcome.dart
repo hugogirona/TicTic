@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
+import 'package:tictic/screens/welcome/widgets/logo_welcome.dart';
+
+import '../../constants/sizes.dart';
 
 class Welcome extends StatelessWidget {
   const Welcome({super.key});
@@ -17,7 +21,7 @@ class Welcome extends StatelessWidget {
         child: SafeArea(
           child: Column(
             children: [
-              Text('bonjour'),
+              LogoWelcome(),
             ],
           ),
         ),
