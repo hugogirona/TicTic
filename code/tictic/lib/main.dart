@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:tictic/screens/welcome/welcome.dart';
-
-import 'constants/colors.dart';
+import './constants/colors.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,7 +15,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: kAppTheme,
-      home: const Welcome(),
+      home: Welcome(),
     );
   }
 }

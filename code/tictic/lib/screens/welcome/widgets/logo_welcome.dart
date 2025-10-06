@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 import '../../../constants/sizes.dart';
 
@@ -10,8 +10,10 @@ class LogoWelcome extends StatelessWidget {
   Widget build(BuildContext context) {
     return SvgPicture.asset(
       "assets/icons/logo.svg",
-      height: MediaQuery.of(context).size.height*kLogoRatioWelcome,
-      width: MediaQuery.of(context).size.width*kLogoRatioWelcome,
+      height:
+      MediaQuery.of(context).size.height * kLogoSizeRatioWelcome,
+      width:
+      MediaQuery.of(context).size.height * kLogoSizeRatioWelcome,
       semanticsLabel: 'Le logo TicTic',
     );
   }

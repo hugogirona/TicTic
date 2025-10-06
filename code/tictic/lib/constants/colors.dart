@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'fonts.dart';
+
+import 'fonts.dart' show kButtonTextStyle;
 
 const kMainColor = Color.fromRGBO(52, 78, 65, 1);
 const kSecondaryColor = Color.fromRGBO(88, 129, 87, 1);
@@ -58,8 +59,8 @@ final kAppTheme = ThemeData(
 
   elevatedButtonTheme: ElevatedButtonThemeData(
     style: ElevatedButton.styleFrom(
+      // TODO : replace !!
       textStyle: kButtonTextStyle,
-      //TODO replace
       backgroundColor: kSecondaryColor,
       foregroundColor: Colors.white,
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(30)),
